@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Slim</h1>
+    <div>a microframework for PHP</div>
+
+    {% if name is defined %}
+        <h2>Hi {{ name }}!</h2>
+    {% else %}
+        <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
+    {% endif %}
+
+{% endblock %}

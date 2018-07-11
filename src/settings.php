@@ -1,13 +1,16 @@
 <?php
 return [
     'settings' => [
-        'displayErrorDetails' => true, // set to false in production
+        'displayErrorDetails'    => true,  // Set to false in production
         'addContentLengthHeader' => false, // Allow the web server to send the content-length header
 
-        // Renderer settings
-        'renderer' => [
+
+        // Twig renderer settings
+        'view' => [
             'template_path' => __DIR__ . '/../templates/',
+            'cache_path'    => __DIR__ . '/../cache/',
         ],
+
 
         // Monolog settings
         'logger' => [
